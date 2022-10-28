@@ -25,6 +25,8 @@ RUN apk --update add \
   libgcrypt-dev &&\
   rm /var/cache/apk/*
 
+RUN apk add --update nodejs npm
+
 RUN pecl channel-update pecl.php.net && \
   pecl install mcrypt redis-5.3.7 && \
   rm -rf /tmp/pear
