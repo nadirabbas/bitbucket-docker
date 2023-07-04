@@ -62,10 +62,6 @@ COPY runtime/php.ini /usr/local/etc/php/php.ini
 RUN chmod 755 /opt/bootstrap
 RUN chmod 755 /opt/bootstrap.php
 
-FROM janmat/cypress-alpine:latest
-
-COPY . .
-
 ENTRYPOINT []
 
 CMD /opt/bootstrap
